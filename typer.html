@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>typer</title>
+	<style> 
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		html, body, canvas {
+			width: 100%;
+			height: 100%;
+		}
+		canvas {
+			position: absolute;
+		}
+
+		.score {
+			position: absolute;
+			right: 150px;
+			font: 50px Courier;
+		}
+		#clock{
+			position: absolute;
+			font: 50px Courier;
+		}
+	</style>
+	<script src="TYPER.js"></script>
+    <script src="Word.js"></script>
+</head>
+<body>
+	<div>
+		<button onclick="startGame()">Alustame mänguga!</button>
+		<h1>Sõnamäng</h1>
+		<p>Sõnamängu saab mängida igaüks, kellel selle jaoks tuju on. </p>
+		<p>Mängu põhimõte seisneb sõnade trükkimises. Iga õigesti trükitud sõna, annab ühe punkti juurde.
+			Iga vale klahvi vajutus võtab teilt ühe punkti vähemaks.
+		</p>
+	</div>
+	<canvas></canvas>
+	<div class="score"></div>
+	<div id="clock"></div>
+	<div class="result"></div>
+</body>
+</html>
