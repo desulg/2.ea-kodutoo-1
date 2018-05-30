@@ -1,5 +1,6 @@
 # 2. kodutöö – *Typer* mängu täiendus
 
+
 Mängu eesmärk on võimalikult kiiresti ekraanile tekkivaid sõnu ära trükkida. Sõnad võetud [Eesti Keele Instituudi lehelt](http://www.eki.ee/tarkvara/wordlist/), [lemmad2013](http://www.eki.ee/tarkvara/wordlist/lemmad2013.txt)
 
 Kodutööna peate täiendama etteantud mängu, et nõuded oleksid täidetud. 
@@ -22,6 +23,12 @@ Kodutööna peate täiendama etteantud mängu, et nõuded oleksid täidetud.
 1. [EI OLE KOHUSTUSLIK] Skoori ja kõiki muid andmeid hoitakse serveris 
 1. [EI OLE KOHUSTUSLIK] Mängu loogika on serveris ja kasutatakse mängus petmist ennetatakse – *cheat*'imine on kõvasti keerulisem
 1. [EI OLE KOHUSTUSLIK] Mäng näeb hea välja ja töötab ka retina ekraanidel!
+
+#Viited ja materjal
+1. Rauno Piibori 2. kodutöö
+2. http://www.w3schools.com/ajax/tryit.asp?filename=tryajax_first
+3.abimaterjaliks taimeri loomisel:  https://stackoverflow.com/questions/27360457/adding-a-timer-to-my-game?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa, https://www.w3schools.com/howto/howto_js_countdown.asp, https://stackoverflow.com/questions/8419354/get-html5-localstorage-keys?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
+3. Ülejäänud kood valminud iseseisvatöö tulemusena
 
 ## Täiendav abimaterjal
 
