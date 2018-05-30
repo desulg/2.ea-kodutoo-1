@@ -3,42 +3,25 @@
 <head>
 	<meta charset="UTF-8">
 	<title>typer</title>
-	<style> 
-		* {
-			margin: 0;
-			padding: 0;
-		}
-		html, body, canvas {
-			width: 100%;
-			height: 100%;
-		}
-		canvas {
-			position: absolute;
-		}
-
-		.score {
-			position: absolute;
-			right: 150px;
-			font: 50px Courier;
-		}
-		#clock{
-			position: absolute;
-			font: 50px Courier;
-		}
-	</style>
+	<link rel="stylesheet" href="main.css">
+	<link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC" rel="stylesheet">
 	<script src="TYPER.js"></script>
     <script src="Word.js"></script>
 </head>
 <body>
-	<div>
-		<button onclick="startGame()">Alustame mänguga!</button>
+	<div class="tekst">
 		<h1>Sõnamäng</h1>
+		<p>Koosneb kahest osast, kus esimene osa on siin teksti boxi all ehk <u>tuleb nupule pihta saada</u></p>
 		<p>Sõnamängu saab mängida igaüks, kellel selle jaoks tuju on. </p>
 		<p>Mängu põhimõte seisneb sõnade trükkimises. Iga õigesti trükitud sõna, annab ühe punkti juurde.
 			Iga vale klahvi vajutus võtab teilt ühe punkti vähemaks.
 		</p>
 	</div>
-	<canvas></canvas>
+	<div class="button">
+		<button onclick="startGame()">Alustame mänguga!</button>
+	</div>
+
+	<canvas id="taust"></canvas>
 	<div class="score"></div>
 	<div id="clock"></div>
 	<div class="result"></div>

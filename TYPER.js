@@ -104,7 +104,10 @@ TYPER.prototype = {
 		xmlhttp.open('GET','./lemmad2013.txt',true);
 		xmlhttp.send();
 	}, 
+	drawAll: function(){
 
+		requestAnimFrame(window.typerGame.drawAll.bind(window.typerGame));
+	},
 	start: function(){
 
 		// Tekitame sõna objekti Word
@@ -113,7 +116,7 @@ TYPER.prototype = {
 
         //joonista sõna
 		this.word.Draw('black');
-
+/*----------------MEIE KOOD----------------*/
 		// Kuulame klahvivajutusi
 		window.addEventListener('keypress', this.keyPressed.bind(this));
 		
@@ -172,6 +175,7 @@ TYPER.prototype = {
 
 	},
 
+/*----------------MEIE KOOD----------------*/
 	keyPressed: function(event){
 		//alert(event.keyCode);
 		//Backspace kui back nupu funktsioon keelatakse ära
@@ -208,6 +212,7 @@ TYPER.prototype = {
 			//joonistan uuesti
 			this.word.Draw('black');
 		}else{
+			/*----------------MEIE KOOD----------------*/
 			//Vale klahvi vajutuse ajal
 			this.word.Draw('red');
 			this.player.score--;

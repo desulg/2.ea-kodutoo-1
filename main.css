@@ -1,0 +1,61 @@
+body div h1{
+    font-family: 'Bowlby One SC';
+}
+body div p{
+    font-family: 'Bowlby One SC', 'Cursive';
+}
+html, body, canvas {
+    width: 100%;
+    height: 100%;
+}
+body div.tekst{
+    text-align: center;
+    padding: 50px;
+    border: 1px solid #4CAF50;
+    position: absolute;
+}
+canvas {
+    position: absolute;
+}
+
+.score {
+    position: absolute;
+    right: 150px;
+    font: 50px Courier;
+}
+#clock{
+    position: absolute;
+    font: 50px Courier;
+}
+body div.button{
+    padding: 5px;
+    margin-top: 50px;
+    position: relative;
+    -webkit-animation: L2R 5s infinite;
+    animation: L2R 5s infinite; 
+    cursor: pointer;
+} 
+
+@-webkit-keyframes L2R {
+    from {left: 0px;}
+    to {left: 90%;}
+}
+
+/* Standard syntax */
+@keyframes L2R {
+    /*from {left: 0px; background: red; width:60px; height: 50px;}
+    to {left: 90%; background: yellow; width: 150px; height: 170px; }*/
+    0% {
+        left: 0; background: red; width:60px; height: 50px;
+      }
+      50% {
+        left: 85%; background: yellow; width: 150px; height: 170px; 
+      }
+      100% {
+        left: 0; background: red; width:60px; height: 50px;
+      }
+}
+
+body canvas.taust{
+    transition: 2s;
+}
