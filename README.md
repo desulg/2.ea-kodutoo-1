@@ -2,7 +2,7 @@
 
 
 
-# <-------Töö on valminud minu ja Andre Martovi koostööna------->
+# <---Töö on valminud minu ja Andre Martovi koostööna--->
 
 
 
