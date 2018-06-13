@@ -13,6 +13,7 @@ body div.tekst{
     padding: 50px;
     border: 1px solid #4CAF50;
     position: absolute;
+    width: 100%;
 }
 canvas {
     position: absolute;
@@ -46,16 +47,19 @@ body div.button{
     /*from {left: 0px; background: red; width:60px; height: 50px;}
     to {left: 90%; background: yellow; width: 150px; height: 170px; }*/
     0% {
-        left: 0; background: red; width:60px; height: 50px;
+        left: 0; background: magenta; width:100px; height: 120px;
       }
       50% {
-        left: 85%; background: yellow; width: 150px; height: 170px; 
+        left: 85%; background: cyan; width: 130px; height: 40px; 
       }
       100% {
-        left: 0; background: red; width:60px; height: 50px;
+        left: 0; background: magenta; width:100px; height: 120px;
       }
 }
 
 body canvas.taust{
     transition: 2s;
+}
+body div.liikuv{
+    position: relative;
 }

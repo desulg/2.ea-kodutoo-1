@@ -169,7 +169,7 @@ TYPER.prototype = {
     },
 	
 	updateScore: function(){
-		div = document.getElementsByTagName('div')[1];
+		div = document.getElementsByTagName('div')[2];
 		div.innerHTML="Sinu skoor: " + this.player.score;
 		localStorage.setItem(this.player.name, this.player.score);
 
@@ -220,17 +220,6 @@ TYPER.prototype = {
 		}
 	}
 }
-/*
-
-function saveScore(){
-	  localStorage.setItem(this.player.name, this.player.score);
-	  document.getElementsByClassName('result').innerHTML = localStorage.getItem(this.player.name);
-	  console.log(localStorage.getItem(this.player.score));
-
-}
-*/
-
-
 
 /* HELPERS */
 function structureArrayByWordLength(words){
@@ -263,7 +252,9 @@ function startGame(){
 	div = document.getElementsByTagName('div')[0];
 	div.style.display="none";
 	var typerGame = new TYPER();
-	window.typerGame = typerGame;	
+	window.typerGame = typerGame;
+	document.getElementById('nupp').style.visibility = 'hidden';
+	document.getElementsByClassName('button')[0].removeAttribute("class");	
 }
 
 
@@ -282,7 +273,7 @@ function startGame(){
 function generateScoreTable(){
 	for (var i = 0, len = localStorage.length; i < len; ++i) {
 		    let tableRow = document.createElement("tr")
-		    let th = document.createElement("th")
+		    let th = document.createElement("td")
 		    let textNodeKey = document.createTextNode(localStorage.key(i))
 		    th.appendChild(textNodeKey)
 		    let td = document.createElement("td")
